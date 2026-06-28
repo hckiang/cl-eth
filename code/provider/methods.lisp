@@ -5,8 +5,7 @@
 		#:length<=
 		#:octet-vector
 		#:->
-		#:last-elt
-		#:median)
+		#:last-elt)
   (:import-from #:alexandria
 		#:required-argument)
   (:export #:web3/client-version
