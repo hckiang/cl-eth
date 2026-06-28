@@ -329,6 +329,6 @@
 	 
 	 ;; tip = median across blocks of (tip-percentile of txs in the block)
 	 (rewards-percentile (map 'vector (lambda (x) (hex->int (elt x 0))) (gethash "reward" fee-history)))
-	 (suggested-tip (median rewards-percentile)))
+	 (suggested-tip (alexandria:median rewards-percentile)))
     
     (list :base-fee suggested-base-fee :tip suggested-tip)))
